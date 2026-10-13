@@ -1,43 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Study HTML </title>
+    <title>HTML Learning Project</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <center> <h1>HTML Learning Project</h1></center> 
-    <center><p>Master the Building Blocks of the Web</p></center>
+    <div class="container">
+        
+        <!-- Header Utama -->
+        <header class="main-header">
+            <h1>🌐 HTML Learning Project</h1>
+            <p>MASTER THE BUILDING BLOCKS OF THE WEB</p>
+        </header>
 
+        <!-- Section 1: What is HTML? -->
+        <section class="card">
+            <h2>🚀 What is HTML?</h2>
+            <p><strong>HTML (HyperText Markup Language)</strong> is the standard markup language for creating web pages. Think of it as the skeleton or foundation of every website you visit.</p>
+            
+            <div class="pink-gradient">
+                <h3>Key Points:</h3>
+                <ul>
+                    <li><b>HyperText:</b> Text with links to other texts</li>
+                    <li><b>Markup:</b> A way to annotate text to show structure and meaning</li>
+                    <li><b>Language:</b> A set of rules and syntax for creating web content</li>
+                </ul>
+            </div>
 
-        <section>
-            <h2> What is HTML? </h2>
-            <p>**HTML (HyperText Markup Language)** is the standard markup language for creating web pages. Think of it as the skeleton or foundation of every website you visit.</p>
-            <ul>
-                <li><b>HyperText</b> - Text with links to other texts</li>
-                <li><b>Markup</b> - The process of adding tags to text to define its structure and meaning.</li>
-                <li><b>Language</b> - The set of rules and syntax for creating HTML documents.</li>
-            </ul>
-
-            <h3>How HTML Works</h3>
-            <p>HTML uses tags to define elements that are enclosed in angle brackets.</p>
+            <div class="sub-section">
+                <h4>🏗️ How HTML Works</h4>
+                <p>HTML uses <strong>tags</strong> to define elements. Tags are keywords surrounded by angle brackets like <code>&lt;tagname&gt;</code>. Most tags come in pairs:</p>
+                <pre class="code-block dark-code"><code>&lt;tagname&gt;Content goes here&lt;/tagname&gt;
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph&lt;/p&gt;</code></pre>
+            </div>
         </section>
 
-        <section>
-            <h2>Basic HTML Structure</h2>
-            <p>Every HTML Document follows this basic structure:</p>
-            <ol>
-                <li><b>&lt;!DOCTYPE html&gt;</b> - Declares the document type and version of HTML.</li>
-                <li><b>&lt;html&gt;</b> - The root element that wraps all content.</li>
-                <li><b>&lt;head&gt;</b> - Contains meta-information, title, and links to stylesheets or scripts.</li>
-                <li><b>&lt;body&gt;</b> - Contains the visible content of the web page.</li>
-            </ol>
+        <!-- Section 2: Basic HTML Structure -->
+        <section class="card">
+            <h2>📋 Basic HTML Structure</h2>
+            <p>Every HTML document follows this basic structure:</p>
+            <pre class="code-block dark-code"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+    &lt;p&gt;This is my first paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+            <div class="pink-gradient">
+                <h3>Structure Breakdown:</h3>
+                <ul>
+                    <li><b><code>&lt;!DOCTYPE html&gt;</code></b> Tells the browser this is HTML5</li>
+                    <li><b><code>&lt;html&gt;</code></b> Root element of the page</li>
+                    <li><b><code>&lt;head&gt;</code></b> Contains metadata (not visible on page)</li>
+                    <li><b><code>&lt;body&gt;</code></b> Contains visible content</li>
+                </ul>
+            </div>
         </section>
 
-        <section>
-            <h2>Important HTML Tags</h2>
-            <table border="3">
+        <!-- Section 3: Essential HTML Tags -->
+        <section class="card">
+            <h2>🏷️ Essential HTML Tags</h2>
+            <table>
                 <thead>
                     <tr>
                         <th>Tag</th>
@@ -47,165 +80,264 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>&lt;h1&gt; - &lt;h6&gt;</td>
+                        <td><code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code></td>
                         <td>Headings (largest to smallest)</td>
-                        <td>&lt;h1&gt;Main Title&lt;/h1&gt;</td>
+                        <td><code>&lt;h1&gt;Main Title&lt;/h1&gt;</code></td>
                     </tr>
                     <tr>
-                        <td>&lt;p&gt;</td>
-                        <td>Paragraph</td>
-                        <td>&lt;p&gt;Paragraph text&lt;/p&gt;</td>
+                        <td><code>&lt;p&gt;</code></td>
+                        <td>Paragraphs</td>
+                        <td><code>&lt;p&gt;This is text&lt;/p&gt;</code></td>
                     </tr>
                     <tr>
-                        <td>&lt;a&gt;</td>
-                        <td>Link</td>
-                        <td>&lt;a href="url"&gt;Link Text&lt;/a&gt;</td>
+                        <td><code>&lt;a&gt;</code></td>
+                        <td>Links</td>
+                        <td><code>&lt;a href="url"&gt;Link text&lt;/a&gt;</code></td>
                     </tr>
                     <tr>
-                        <td>&lt;img&gt;</td>
-                        <td>Image</td>
-                        <td>&lt;img src="image.jpg" alt="Description"&gt;</td>
+                        <td><code>&lt;img&gt;</code></td>
+                        <td>Images</td>
+                        <td><code>&lt;img src="image.jpg" alt="Description"&gt;</code></td>
                     </tr>
                     <tr>
-                        <td>&lt;div&gt;</td>
-                        <td>Container / Section</td>
-                        <td>&lt;div&gt;Content&lt;/div&gt;</td>
+                        <td><code>&lt;div&gt;</code></td>
+                        <td>Container/section</td>
+                        <td><code>&lt;div&gt;Content here&lt;/div&gt;</code></td>
                     </tr>
+                    <tr>
+                        <td><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code></td>
+                        <td>Lists</td>
+                        <td><code>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</code></td>
+                    </tr>
+                </tbody>
+            </table>
 
+            <div class="preview-box">
+                <h3>🎯 Live Examples:</h3>
+                <h1 style="text-align: center;">This is an H1 heading</h1>
+                <h2>This is an H2 heading</h2>
+                <h3>This is an H3 heading</h3>
+                <p>This is a paragraph with <strong>bold text</strong> and <em>italic text</em>.</p>
+                <p>Here's a <a href="#">sample link</a>.</p>
+                
+                <h4>Unordered List:</h4>
+                <ul>
+                    <li>First item</li>
+                    <li>Second item</li>
+                    <li>Third item</li>
+                </ul>
 
+                <h4>Ordered List:</h4>
+                <ol>
+                    <li>Step one</li>
+                    <li>Step two</li>
+                    <li>Step three</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Section 4: HTML Forms -->
+        <section class="card">
+            <h2>📝 HTML Forms</h2>
+            <p>Forms allow users to input data.</p>
+            <pre class="code-block dark-code"><code>&lt;form&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+    
+    &lt;label for="message"&gt;Message:&lt;/label&gt;
+    &lt;textarea id="message" name="message"&gt;&lt;/textarea&gt;
+    
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+            <div class="form-preview">
+                <h3>Example Form:</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="form-name">Name:</label>
+                        <input type="text" id="form-name" placeholder="Text Input">
+                    </div>
+                    <div class="form-group">
+                        <label for="form-email">Email:</label>
+                        <input type="email" id="form-email" placeholder="Email Input">
+                    </div>
+                    <div class="form-group">
+                        <label for="form-subject">Subject:</label>
+                        <select id="form-subject">
+                            <option>Question</option>
+                            <option>Feedback</option>
+                            <option>Support</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-message">Message:</label>
+                        <textarea id="form-message" placeholder="Text Area" rows="3"></textarea>
+                    </div>
+                    <button type="button" class="btn-submit">Submit Form</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Section 5: HTML Attributes -->
+        <section class="card">
+            <h2>🎨 HTML Attributes</h2>
+            <p>Attributes provide additional information about HTML elements:</p>
+            <pre class="code-block dark-code"><code>&lt;!-- Common attributes --&gt;
+&lt;img src="photo.jpg" alt="A beautiful sunset" width="300" height="200"&gt;
+&lt;a href="https://example.com" target="_blank" title="Visit Example"&gt;Click here&lt;/a&gt;
+&lt;div class="container" id="main-content" style="color: blue;"&gt;Content&lt;/div&gt;</code></pre>
+
+            <div class="pink-gradient">
+                <h3>Important Attributes:</h3>
+                <ul>
+                    <li><strong>id:</strong> Unique identifier for an element</li>
+                    <li><strong>class:</strong> Groups elements for styling</li>
+                    <li><strong>src:</strong> Source file for images, videos, etc.</li>
+                    <li><strong>href:</strong> URL for links</li>
+                    <li><strong>alt:</strong> Alternative text for images</li>
+                    <li><strong>style:</strong> Inline CSS styling</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 6: Tables in HTML -->
+        <section class="card">
+            <h2>📊 Tables in HTML</h2>
+            <p>Tables organize data in rows and columns:</p>
+            <pre class="code-block dark-code"><code>&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Age&lt;/th&gt;
+            &lt;th&gt;City&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;John&lt;/td&gt;
+            &lt;td&gt;25&lt;/td&gt;
+            &lt;td&gt;New York&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+            <h3>Sample Table:</h3>
+            <table>
+                <thead>
                     <tr>
-                        <td>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</td>
-                        <td> List </td>
-                        <td>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</td>
+                        <th>Student</th>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alice Johnson</td>
+                        <td>Mathematics</td>
+                        <td>A+</td>
+                        <td>✅ Passed</td>
+                    </tr>
+                    <tr>
+                        <td>Bob Smith</td>
+                        <td>Physics</td>
+                        <td>B</td>
+                        <td>✅ Passed</td>
+                    </tr>
+                    <tr>
+                        <td>Carol Davis</td>
+                        <td>Chemistry</td>
+                        <td>A</td>
+                        <td>✅ Passed</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <section>
-            <h2>HTML Forms</h2>
-            <form>
-                <div>
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name">
-                </div>
-                <div>
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email">
-                </div>
-                <div>
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message"></textarea>
-                </div>
-                <div>
-                    <button type="submit">Submit</button>
-                </div>
-            </form>
+        <!-- Section 7: Practice Exercises -->
+        <section class="card pink-gradient">
+            <h2>💻 Practice Exercises</h2>
+            <div class="sub-section">
+                <h4>Beginner Tasks:</h4>
+                <ol>
+                    <li>Create a basic HTML page with a title, heading, and paragraph</li>
+                    <li>Add an image with alt text</li>
+                    <li>Create a list of your favorite movies</li>
+                    <li>Build a simple table with your weekly schedule</li>
+                </ol>
+            </div>
+            <div class="sub-section">
+                <h4>Intermediate Tasks:</h4>
+                <ol>
+                    <li>Create a contact form with different input types</li>
+                    <li>Build a navigation menu with links</li>
+                    <li>Design a simple blog post layout</li>
+                    <li>Create a photo gallery grid</li>
+                </ol>
+            </div>
         </section>
 
-        <section>
-    <h2>HTML Attributes</h2>
-    <p> Attributes provide additional information about HTML elements.</p>
-    <h3>Important Attributes:</h3>
+        <!-- Section 8: Project Structure -->
+        <section class="card">
+            <h2>🗂️ Project Structure</h2>
+            <p>Here's how to organize your HTML project:</p>
+            <pre class="code-block dark-code"><code>my-website/
+│
+├── index.html        (Main page)
+├── about.html        (About page)
+├── contact.html      (Contact page)
+│
+├── css/
+│   └── styles.css    (CSS stylesheets)
+│
+├── js/
+│   └── script.js     (JavaScript files)
+│
+└── images/
+    ├── logo.png
+    ├── hero-image.jpg
+    └── gallery/
+        ├── photo1.jpg
+        └── photo2.jpg</code></pre>
+        </section>
 
-    <ul>
-        <li><b>id</b> - Unique identifier for an element</li>
-        <li><b>class</b> - Groups elements for styling</li>
-        <li><b>src</b> - Source file for images, videos, etc.</li>
-        <li><b>href</b> - URL for links</li>
-        <li><b>alt</b> - Alternative text for images</li>
-        <li><b>style</b> - Inline CSS styling</li>
-    </ul>
-</section>
+        <!-- Section 9: Next Steps -->
+        <section class="card pink-gradient">
+            <h2>🎯 Next Steps in Your Learning Journey</h2>
+            <p>After mastering HTML, continue with:</p>
+            <ul>
+                <li><strong>CSS (Cascading Style Sheets):</strong> Style your HTML elements</li>
+                <li><strong>JavaScript:</strong> Add interactivity and dynamic behavior</li>
+                <li><strong>Responsive Design:</strong> Make websites work on all devices</li>
+                <li><strong>Web Accessibility:</strong> Make websites usable for everyone</li>
+                <li><strong>Modern Frameworks:</strong> React, Vue.js, or Angular</li>
+            </ul>
+        </section>
 
-<section>
-    <h2>Tables in HTML</h2>
-    <p>Tables organize data in rows and columns:</p>
+        <!-- Section 10: Development Tools -->
+        <section class="card pink-gradient">
+            <h2>🔧 Development Tools</h2>
+            <h4>Recommended Tools:</h4>
+            <ul>
+                <li><strong>Text Editors:</strong> VS Code, Sublime Text, Atom</li>
+                <li><strong>Browsers:</strong> Chrome DevTools, Firefox Developer Tools</li>
+                <li><strong>Version Control:</strong> Git and GitHub</li>
+                <li><strong>Online Editors:</strong> CodePen, JSFiddle, Repl.it</li>
+            </ul>
+        </section>
 
-    <h3>Sample Table:</h3>
-    <table border="4">
-        <thead>
-            <tr>
-                <th>Student</th>
-                <th>Subject</th>
-                <th>Grade</th>
-                <th>Status</th>
-            </tr>
-        </thead>
+        <!-- Footer Card -->
+        <footer class="footer-card">
+            <h2>🎉 Congratulations!</h2>
+            <p>You've completed the HTML Learning Project! You now understand the fundamentals of HTML and can create your own web pages. Keep practicing and building projects to strengthen your skills.</p>
+        <p><b>Remember:</b> The best way to learn HTML is by doing! Start building your own projects!</p>
+        <p>By.Nisa Asiah Paujiati Sstani</p>
+        </footer>
 
-        <tbody>
-            <tr>
-                <td>Alice Johnson</td>
-                <td>Mathematics</td>
-                <td>A+</td>
-                <td>Passed</td>
-            </tr>
-
-            <tr>
-                <td>Bob Smith</td>
-                <td>Physics</td>
-                <td>B</td>
-                <td>Passed</td>
-            </tr>
-
-            <tr>
-                <td>Carol Davis</td>
-                <td>Chemistry</td>
-                <td>A</td>
-                <td>Passed</td>
-            </tr>
-        </tbody>
-    </table>
-</section>
-
-<section>
-    <h2>Practice Exercises</h2>
-    <h3>Beginner Tasks:</h3>
-
-    <ol>
-        <li>Create a basic HTML page with a title, heading, and paragraph</li>
-        <li>Add an image with alt text</li>
-        <li>Create a list of your favorite movies</li>
-        <li>Build a simple table with your weekly schedule</li>
-    </ol>
-
-    <h3>Intermediate Tasks:</h3>
-    
-    <ol>
-        <li>Create a contact form with different input types</li>
-        <li>Build a navigation menu with links</li>
-        <li>Design a simple blog post layout</li>
-        <li>Create a photo gallery grid</li>
-    </ol>
-</section>
-
-<section>
-    <h2>Project Structure</h2>
-    <p> Here's how to organize your HTML project:</p>
-</section>
-
-<section>
-    <h2>Next Steps in Your Learning Journey</h2>
-    <p> After mastering HTML, continue with:</p>
-    <ul>
-        <li><b>CSS (Cascading Style Sheets)</b> - Style your HTML elements</li>
-        <li><b>JavaScript</b> - Add interactivity and dynamic behavior</li>
-        <li><b>Responsive Design</b> - Make websites work on all devices</li>
-        <li><b>Web Accessibility</b> - Make websites usable for everyone</li>
-        <li><b>Modern Frameworks</b> - React, Vue.js, or Angular</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Development Tools</h2>
-    <h3>Recommended Tools:</h3>
-    <ul>
-        <li><b>Text Editors:</b> VS Code, Sublime Text, Atom</li>
-        <li><b>Browsers:</b> Chrome DevTools, Firefox Developer Tools</li>
-        <li><b>Version Control:</b> Git and GitHub</li>
-        <li><b>Online Editors:</b> CodePen, JSFiddle, Repl.it</li>
-    </ul>
-</section>
+    </div>
 
 </body>
 </html>
