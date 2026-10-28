@@ -1,7 +1,6 @@
-/* ===== Custom Body & Layout ===== */
 body.custom-body {
     background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
-    background-attachment: fixed; /* Latar belakang tetap saat di-scroll */
+    background-attachment: fixed; 
     font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     min-height: 100vh;
 }
@@ -10,24 +9,23 @@ body.custom-body {
     max-width: 820px;
 }
 
-/* ===== EFEK TEXT GRADIENT & UTILITY WARNA (BARU DITAMBAHKAN) ===== */
 .text-gradient-cyan {
     background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-rose {
     background: linear-gradient(135deg, #e11d48 0%, #be123c 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 .text-rose { color: #be123c; }
 .text-indigo { color: #4338ca; }
 .text-primary-dark { color: #1d4ed8; }
 
-/* Tag Code Mini Berwarna (BARU DITAMBAHKAN) */
 .code-tag {
     background-color: #f1f5f9;
     color: #e11d48;
@@ -38,7 +36,6 @@ body.custom-body {
     border: 1px solid #fecdd3;
 }
 
-/* Custom Bullet Points Warna Rose (BARU DITAMBAHKAN) */
 .custom-rose-list li::marker {
     color: #f43f5e;
     font-size: 1.1em;
@@ -125,7 +122,6 @@ body.custom-body {
     font-size: 13px;
 }
 
-/* ===== Styling Khusus Live Examples Box ===== */
 .preview-box {
     background-color: #f8fafc !important;
     border-color: #cbd5e1 !important;
