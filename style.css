@@ -90,3 +90,30 @@ body.custom-body {
 .fs-7 {
     font-size: 13px;
 }
+
+/* ===== Styling Khusus Live Examples Box ===== */
+.preview-box {
+    background-color: #f8fafc !important;
+    border-color: #cbd5e1 !important;
+}
+
+.example-item {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.example-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.preview-box a.btn-outline-primary {
+    border-radius: 6px;
+    font-size: 13px;
+    transition: all 0.2s ease;
+}
+
+.preview-box a.btn-outline-primary:hover {
+    background-color: #0284c7;
+    border-color: #0284c7;
+    color: #ffffff;
+}
