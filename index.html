@@ -3,47 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Learning Project</title>
+    <title>HTML Learning Project - Bootstrap Version</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- File CSS Custom (untuk penyesuaian khusus seperti warna gradasi) -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="custom-body py-4">
 
-    <div class="container">
+    <div class="container container-custom">
         
         <!-- Header Utama -->
-        <header class="main-header">
-            <h1>🌐 HTML Learning Project</h1>
-            <p>MASTER THE BUILDING BLOCKS OF THE WEB</p>
+        <header class="main-header card shadow-sm text-center p-4 border-0 mb-4">
+            <h1 class="fw-bold mb-1 h3">🌐 HTML Learning Project</h1>
+            <p class="text-uppercase text-secondary fw-semibold mb-0 tracking-wider">MASTER THE BUILDING BLOCKS OF THE WEB</p>
         </header>
 
         <!-- Section 1: What is HTML? -->
-        <section class="card">
-            <h2>🚀 What is HTML?</h2>
-            <p><strong>HTML (HyperText Markup Language)</strong> is the standard markup language for creating web pages. Think of it as the skeleton or foundation of every website you visit.</p>
+        <section class="card shadow-sm border-0 p-4 mb-4 hover-card">
+            <h2 class="h4 pb-2 border-bottom text-dark fw-bold">🚀 What is HTML?</h2>
+            <p class="text-secondary fs-6">
+                <strong>HTML (HyperText Markup Language)</strong> is the standard markup language for creating web pages. Think of it as the skeleton or foundation of every website you visit.
+            </p>
             
-            <div class="pink-gradient">
-                <h3>Key Points:</h3>
-                <ul>
+            <div class="pink-gradient p-3 rounded my-3">
+                <h3 class="h6 fw-bold">Key Points:</h3>
+                <ul class="mb-0 text-dark">
                     <li><b>HyperText:</b> Text with links to other texts</li>
                     <li><b>Markup:</b> A way to annotate text to show structure and meaning</li>
                     <li><b>Language:</b> A set of rules and syntax for creating web content</li>
                 </ul>
             </div>
 
-            <div class="sub-section">
-                <h4>🏗️ How HTML Works</h4>
-                <p>HTML uses <strong>tags</strong> to define elements. Tags are keywords surrounded by angle brackets like <code>&lt;tagname&gt;</code>. Most tags come in pairs:</p>
-                <pre class="code-block dark-code"><code>&lt;tagname&gt;Content goes here&lt;/tagname&gt;
+            <div class="sub-section mt-3">
+                <h4 class="h6 fw-bold text-dark">🏗️ How HTML Works</h4>
+                <p class="text-secondary fs-6">HTML uses <strong>tags</strong> to define elements. Tags are keywords surrounded by angle brackets like <code>&lt;tagname&gt;</code>. Most tags come in pairs:</p>
+                <pre class="code-block dark-code rounded p-3 mb-0"><code>&lt;tagname&gt;Content goes here&lt;/tagname&gt;
 &lt;h1&gt;This is a heading&lt;/h1&gt;
 &lt;p&gt;This is a paragraph&lt;/p&gt;</code></pre>
             </div>
         </section>
 
         <!-- Section 2: Basic HTML Structure -->
-        <section class="card">
-            <h2>📋 Basic HTML Structure</h2>
-            <p>Every HTML document follows this basic structure:</p>
-            <pre class="code-block dark-code"><code>&lt;!DOCTYPE html&gt;
+        <section class="card shadow-sm border-0 p-4 mb-4 hover-card">
+            <h2 class="h4 pb-2 border-bottom text-dark fw-bold">📋 Basic HTML Structure</h2>
+            <p class="text-secondary fs-6">Every HTML document follows this basic structure:</p>
+            <pre class="code-block dark-code rounded p-3 mb-3"><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
@@ -56,9 +61,9 @@
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 
-            <div class="pink-gradient">
-                <h3>Structure Breakdown:</h3>
-                <ul>
+            <div class="pink-gradient p-3 rounded">
+                <h3 class="h6 fw-bold">Structure Breakdown:</h3>
+                <ul class="mb-0 text-dark">
                     <li><b><code>&lt;!DOCTYPE html&gt;</code></b> Tells the browser this is HTML5</li>
                     <li><b><code>&lt;html&gt;</code></b> Root element of the page</li>
                     <li><b><code>&lt;head&gt;</code></b> Contains metadata (not visible on page)</li>
@@ -68,66 +73,68 @@
         </section>
 
         <!-- Section 3: Essential HTML Tags -->
-        <section class="card">
-            <h2>🏷️ Essential HTML Tags</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Tag</th>
-                        <th>Purpose</th>
-                        <th>Example</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code></td>
-                        <td>Headings (largest to smallest)</td>
-                        <td><code>&lt;h1&gt;Main Title&lt;/h1&gt;</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>&lt;p&gt;</code></td>
-                        <td>Paragraphs</td>
-                        <td><code>&lt;p&gt;This is text&lt;/p&gt;</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>&lt;a&gt;</code></td>
-                        <td>Links</td>
-                        <td><code>&lt;a href="url"&gt;Link text&lt;/a&gt;</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>&lt;img&gt;</code></td>
-                        <td>Images</td>
-                        <td><code>&lt;img src="image.jpg" alt="Description"&gt;</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>&lt;div&gt;</code></td>
-                        <td>Container/section</td>
-                        <td><code>&lt;div&gt;Content here&lt;/div&gt;</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code></td>
-                        <td>Lists</td>
-                        <td><code>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</code></td>
-                    </tr>
-                </tbody>
-            </table>
+        <section class="card shadow-sm border-0 p-4 mb-4 hover-card">
+            <h2 class="h4 pb-2 border-bottom text-dark fw-bold">🏷️ Essential HTML Tags</h2>
+            <div class="table-responsive">
+                <table class="table table-hover table-bordered align-middle my-3">
+                    <thead class="table-primary text-white">
+                        <tr>
+                            <th>Tag</th>
+                            <th>Purpose</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code></td>
+                            <td>Headings (largest to smallest)</td>
+                            <td><code>&lt;h1&gt;Main Title&lt;/h1&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;p&gt;</code></td>
+                            <td>Paragraphs</td>
+                            <td><code>&lt;p&gt;This is text&lt;/p&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;a&gt;</code></td>
+                            <td>Links</td>
+                            <td><code>&lt;a href="url"&gt;Link text&lt;/a&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;img&gt;</code></td>
+                            <td>Images</td>
+                            <td><code>&lt;img src="image.jpg" alt="Description"&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;div&gt;</code></td>
+                            <td>Container/section</td>
+                            <td><code>&lt;div&gt;Content here&lt;/div&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code></td>
+                            <td>Lists</td>
+                            <td><code>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-            <div class="preview-box">
-                <h3>🎯 Live Examples:</h3>
-                <h1 style="text-align: center;">This is an H1 heading</h1>
-                <h2>This is an H2 heading</h2>
-                <h3>This is an H3 heading</h3>
+            <div class="preview-box bg-light border rounded p-3 mt-3">
+                <h3 class="h6 fw-bold mb-3">🎯 Live Examples:</h3>
+                <h1 class="text-center h3 my-2">This is an H1 heading</h1>
+                <h2 class="h4 my-2">This is an H2 heading</h2>
+                <h3 class="h5 my-2">This is an H3 heading</h3>
                 <p>This is a paragraph with <strong>bold text</strong> and <em>italic text</em>.</p>
-                <p>Here's a <a href="#">sample link</a>.</p>
+                <p>Here's a <a href="#" class="text-decoration-underline">sample link</a>.</p>
                 
-                <h4>Unordered List:</h4>
+                <h4 class="h6 fw-bold mt-3">Unordered List:</h4>
                 <ul>
                     <li>First item</li>
                     <li>Second item</li>
                     <li>Third item</li>
                 </ul>
 
-                <h4>Ordered List:</h4>
+                <h4 class="h6 fw-bold mt-3">Ordered List:</h4>
                 <ol>
                     <li>Step one</li>
                     <li>Step two</li>
@@ -137,10 +144,10 @@
         </section>
 
         <!-- Section 4: HTML Forms -->
-        <section class="card">
-            <h2>📝 HTML Forms</h2>
-            <p>Forms allow users to input data.</p>
-            <pre class="code-block dark-code"><code>&lt;form&gt;
+        <section class="card shadow-sm border-0 p-4 mb-4 hover-card">
+            <h2 class="h4 pb-2 border-bottom text-dark fw-bold">📝 HTML Forms</h2>
+            <p class="text-secondary fs-6">Forms allow users to input data.</p>
+            <pre class="code-block dark-code rounded p-3 mb-3"><code>&lt;form&gt;
     &lt;label for="name"&gt;Name:&lt;/label&gt;
     &lt;input type="text" id="name" name="name"&gt;
     
@@ -153,46 +160,46 @@
     &lt;button type="submit"&gt;Submit&lt;/button&gt;
 &lt;/form&gt;</code></pre>
 
-            <div class="form-preview">
-                <h3>Example Form:</h3>
+            <div class="form-preview bg-light border rounded p-3">
+                <h3 class="h6 fw-bold mb-3">Example Form:</h3>
                 <form>
-                    <div class="form-group">
-                        <label for="form-name">Name:</label>
-                        <input type="text" id="form-name" placeholder="Text Input">
+                    <div class="mb-3">
+                        <label for="form-name" class="form-label fw-semibold fs-7">Name:</label>
+                        <input type="text" class="form-control" id="form-name" placeholder="Text Input">
                     </div>
-                    <div class="form-group">
-                        <label for="form-email">Email:</label>
-                        <input type="email" id="form-email" placeholder="Email Input">
+                    <div class="mb-3">
+                        <label for="form-email" class="form-label fw-semibold fs-7">Email:</label>
+                        <input type="email" class="form-control" id="form-email" placeholder="Email Input">
                     </div>
-                    <div class="form-group">
-                        <label for="form-subject">Subject:</label>
-                        <select id="form-subject">
+                    <div class="mb-3">
+                        <label for="form-subject" class="form-label fw-semibold fs-7">Subject:</label>
+                        <select class="form-select" id="form-subject">
                             <option>Question</option>
                             <option>Feedback</option>
                             <option>Support</option>
                         </select>
                     </div>
-                    <div class="form-group">
-                        <label for="form-message">Message:</label>
-                        <textarea id="form-message" placeholder="Text Area" rows="3"></textarea>
+                    <div class="mb-3">
+                        <label for="form-message" class="form-label fw-semibold fs-7">Message:</label>
+                        <textarea class="form-control" id="form-message" placeholder="Text Area" rows="3"></textarea>
                     </div>
-                    <button type="button" class="btn-submit">Submit Form</button>
+                    <button type="button" class="btn btn-primary px-4 fw-semibold">Submit Form</button>
                 </form>
             </div>
         </section>
 
         <!-- Section 5: HTML Attributes -->
-        <section class="card">
-            <h2>🎨 HTML Attributes</h2>
-            <p>Attributes provide additional information about HTML elements:</p>
-            <pre class="code-block dark-code"><code>&lt;!-- Common attributes --&gt;
+        <section class="card shadow-sm border-0 p-4 mb-4 hover-card">
+            <h2 class="h4 pb-2 border-bottom text-dark fw-bold">🎨 HTML Attributes</h2>
+            <p class="text-secondary fs-6">Attributes provide additional information about HTML elements:</p>
+            <pre class="code-block dark-code rounded p-3 mb-3"><code>&lt;!-- Common attributes --&gt;
 &lt;img src="photo.jpg" alt="A beautiful sunset" width="300" height="200"&gt;
 &lt;a href="https://example.com" target="_blank" title="Visit Example"&gt;Click here&lt;/a&gt;
 &lt;div class="container" id="main-content" style="color: blue;"&gt;Content&lt;/div&gt;</code></pre>
 
-            <div class="pink-gradient">
-                <h3>Important Attributes:</h3>
-                <ul>
+            <div class="pink-gradient p-3 rounded">
+                <h3 class="h6 fw-bold">Important Attributes:</h3>
+                <ul class="mb-0 text-dark">
                     <li><strong>id:</strong> Unique identifier for an element</li>
                     <li><strong>class:</strong> Groups elements for styling</li>
                     <li><strong>src:</strong> Source file for images, videos, etc.</li>
@@ -204,10 +211,10 @@
         </section>
 
         <!-- Section 6: Tables in HTML -->
-        <section class="card">
-            <h2>📊 Tables in HTML</h2>
-            <p>Tables organize data in rows and columns:</p>
-            <pre class="code-block dark-code"><code>&lt;table&gt;
+        <section class="card shadow-sm border-0 p-4 mb-4 hover-card">
+            <h2 class="h4 pb-2 border-bottom text-dark fw-bold">📊 Tables in HTML</h2>
+            <p class="text-secondary fs-6">Tables organize data in rows and columns:</p>
+            <pre class="code-block dark-code rounded p-3 mb-3"><code>&lt;table&gt;
     &lt;thead&gt;
         &lt;tr&gt;
             &lt;th&gt;Name&lt;/th&gt;
@@ -224,54 +231,56 @@
     &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
 
-            <h3>Sample Table:</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Student</th>
-                        <th>Subject</th>
-                        <th>Grade</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Alice Johnson</td>
-                        <td>Mathematics</td>
-                        <td>A+</td>
-                        <td>✅ Passed</td>
-                    </tr>
-                    <tr>
-                        <td>Bob Smith</td>
-                        <td>Physics</td>
-                        <td>B</td>
-                        <td>✅ Passed</td>
-                    </tr>
-                    <tr>
-                        <td>Carol Davis</td>
-                        <td>Chemistry</td>
-                        <td>A</td>
-                        <td>✅ Passed</td>
-                    </tr>
-                </tbody>
-            </table>
+            <h3 class="h6 fw-bold mt-4 mb-3">Sample Table:</h3>
+            <div class="table-responsive">
+                <table class="table table-hover table-bordered align-middle">
+                    <thead class="table-primary text-white">
+                        <tr>
+                            <th>Student</th>
+                            <th>Subject</th>
+                            <th>Grade</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alice Johnson</td>
+                            <td>Mathematics</td>
+                            <td>A+</td>
+                            <td><span class="badge bg-success">✅ Passed</span></td>
+                        </tr>
+                        <tr>
+                            <td>Bob Smith</td>
+                            <td>Physics</td>
+                            <td>B</td>
+                            <td><span class="badge bg-success">✅ Passed</span></td>
+                        </tr>
+                        <tr>
+                            <td>Carol Davis</td>
+                            <td>Chemistry</td>
+                            <td>A</td>
+                            <td><span class="badge bg-success">✅ Passed</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
         <!-- Section 7: Practice Exercises -->
-        <section class="card pink-gradient">
-            <h2>💻 Practice Exercises</h2>
-            <div class="sub-section">
-                <h4>Beginner Tasks:</h4>
-                <ol>
+        <section class="card shadow-sm border-0 p-4 mb-4 pink-gradient hover-card">
+            <h2 class="h4 pb-2 border-bottom border-danger border-opacity-25 fw-bold text-danger">💻 Practice Exercises</h2>
+            <div class="sub-section my-2">
+                <h4 class="h6 fw-bold text-dark">Beginner Tasks:</h4>
+                <ol class="mb-0 text-dark">
                     <li>Create a basic HTML page with a title, heading, and paragraph</li>
                     <li>Add an image with alt text</li>
                     <li>Create a list of your favorite movies</li>
                     <li>Build a simple table with your weekly schedule</li>
                 </ol>
             </div>
-            <div class="sub-section">
-                <h4>Intermediate Tasks:</h4>
-                <ol>
+            <div class="sub-section mt-3">
+                <h4 class="h6 fw-bold text-dark">Intermediate Tasks:</h4>
+                <ol class="mb-0 text-dark">
                     <li>Create a contact form with different input types</li>
                     <li>Build a navigation menu with links</li>
                     <li>Design a simple blog post layout</li>
@@ -281,10 +290,10 @@
         </section>
 
         <!-- Section 8: Project Structure -->
-        <section class="card">
-            <h2>🗂️ Project Structure</h2>
-            <p>Here's how to organize your HTML project:</p>
-            <pre class="code-block dark-code"><code>my-website/
+        <section class="card shadow-sm border-0 p-4 mb-4 hover-card">
+            <h2 class="h4 pb-2 border-bottom text-dark fw-bold">🗂️ Project Structure</h2>
+            <p class="text-secondary fs-6">Here's how to organize your HTML project:</p>
+            <pre class="code-block dark-code rounded p-3 mb-0"><code>my-website/
 │
 ├── index.html        (Main page)
 ├── about.html        (About page)
@@ -305,10 +314,10 @@
         </section>
 
         <!-- Section 9: Next Steps -->
-        <section class="card pink-gradient">
-            <h2>🎯 Next Steps in Your Learning Journey</h2>
-            <p>After mastering HTML, continue with:</p>
-            <ul>
+        <section class="card shadow-sm border-0 p-4 mb-4 pink-gradient hover-card">
+            <h2 class="h4 pb-2 border-bottom border-danger border-opacity-25 fw-bold text-danger">🎯 Next Steps in Your Learning Journey</h2>
+            <p class="text-secondary fs-6">After mastering HTML, continue with:</p>
+            <ul class="mb-0 text-dark">
                 <li><strong>CSS (Cascading Style Sheets):</strong> Style your HTML elements</li>
                 <li><strong>JavaScript:</strong> Add interactivity and dynamic behavior</li>
                 <li><strong>Responsive Design:</strong> Make websites work on all devices</li>
@@ -318,10 +327,10 @@
         </section>
 
         <!-- Section 10: Development Tools -->
-        <section class="card pink-gradient">
-            <h2>🔧 Development Tools</h2>
-            <h4>Recommended Tools:</h4>
-            <ul>
+        <section class="card shadow-sm border-0 p-4 mb-4 pink-gradient hover-card">
+            <h2 class="h4 pb-2 border-bottom border-danger border-opacity-25 fw-bold text-danger">🔧 Development Tools</h2>
+            <h4 class="h6 fw-bold text-dark">Recommended Tools:</h4>
+            <ul class="mb-0 text-dark">
                 <li><strong>Text Editors:</strong> VS Code, Sublime Text, Atom</li>
                 <li><strong>Browsers:</strong> Chrome DevTools, Firefox Developer Tools</li>
                 <li><strong>Version Control:</strong> Git and GitHub</li>
@@ -330,14 +339,16 @@
         </section>
 
         <!-- Footer Card -->
-        <footer class="footer-card">
-            <h2>🎉 Congratulations!</h2>
-            <p>You've completed the HTML Learning Project! You now understand the fundamentals of HTML and can create your own web pages. Keep practicing and building projects to strengthen your skills.</p>
-        <p><b>Remember:</b> The best way to learn HTML is by doing! Start building your own projects!</p>
-        <p>By.Nisa Asiah Paujiati Sstani</p>
+        <footer class="footer-card rounded p-4 text-center text-white shadow-sm mb-4 hover-card">
+            <h2 class="h3 fw-bold mb-3 text-white">🎉 Congratulations!</h2>
+            <p class="text-light opacity-90 fs-6">You've completed the HTML Learning Project! You now understand the fundamentals of HTML and can create your own web pages. Keep practicing and building projects to strengthen your skills.</p>
+            <p class="mb-2"><b>Remember:</b> The best way to learn HTML is by doing! Start building your own projects!</p>
+            <p class="small text-info mb-0">By. Nisa Asiah Paujiati Sstani</p>
         </footer>
 
     </div>
 
+    <!-- Bootstrap 5 JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
